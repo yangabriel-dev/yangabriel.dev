@@ -51,6 +51,13 @@ export interface Dictionary {
     liveLabel: string;
     items: Record<ProjectId, ProjectText>;
   };
-  contact: { title: string; subtitle: string; emailCta: string; location: string };
+  contact: {
+    title: string;
+    subtitle: string;
+    emailCta: string;
+    copyEmail: string;
+    copied: string;
+    location: string;
+  };
   verses: { afterHero: Verse; afterAbout: Verse; closing: Verse };
 }

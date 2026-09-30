@@ -148,14 +148,18 @@
     @apply border-border outline-ring/50;
   }
   html {
-    @apply scroll-smooth font-sans;
+    @apply font-sans motion-safe:scroll-smooth;
   }
   body {
     @apply bg-background text-body antialiased;
     text-wrap: pretty;
-    transition:
-      background-color 0.4s ease,
-      color 0.4s ease;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    body {
+      transition:
+        background-color 0.4s ease,
+        color 0.4s ease;
+    }
   }
   ::selection {
     background: #ec6e00;

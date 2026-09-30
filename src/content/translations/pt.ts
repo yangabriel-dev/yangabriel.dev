@@ -2,9 +2,9 @@ import type { Dictionary } from "@/types/content";
 
 export const pt: Dictionary = {
   meta: {
-    title: "Yan Gabriel — Desenvolvedor Front-End",
+    title: "Yan Gabriel — Desenvolvedor Full-Stack Júnior",
     description:
-      "Portfólio de Yan Gabriel, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor front-end.",
+      "Portfólio de Yan Gabriel, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor full-stack júnior.",
   },
   nav: {
     about: "Sobre",
@@ -16,12 +16,12 @@ export const pt: Dictionary = {
     switchLanguage: "Mudar idioma para inglês",
   },
   hero: {
-    eyebrow: "Estudante de ADS · Desenvolvedor Front‑End",
+    eyebrow: "Estudante de ADS · Desenvolvedor Full‑Stack Júnior",
     verse: {
       text: "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem‑sucedidos.",
       reference: "Provérbios 16:3",
     },
-    bio: "Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e aprendizado contínuo. Nas horas vagas, amo construir landing pages criativas, unindo design cuidadoso e código bem feito.",
+    bio: "Sou Yan Gabriel, estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e aprendizado contínuo. Nas horas vagas, amo construir landing pages criativas, unindo design cuidadoso e código bem feito.",
     emailCta: "Enviar e-mail",
     projectsCta: "Ver projetos",
   },
@@ -71,6 +71,8 @@ export const pt: Dictionary = {
     subtitle:
       "Aberto a oportunidades de estágio, parcerias, colaborações ou só uma boa conversa sobre tecnologia.",
     emailCta: "Enviar e-mail",
+    copyEmail: "Copiar e-mail",
+    copied: "E-mail copiado",
     location: "Brasil",
   },
   verses: {

@@ -2,9 +2,9 @@ import type { Dictionary } from "@/types/content";
 
 export const en: Dictionary = {
   meta: {
-    title: "Yan Gabriel — Front-End Developer",
+    title: "Yan Gabriel — Junior Full-Stack Developer",
     description:
-      "Portfolio of Yan Gabriel, Systems Analysis and Development student and front-end developer.",
+      "Portfolio of Yan Gabriel, Systems Analysis and Development student and junior full-stack developer.",
   },
   nav: {
     about: "About",
@@ -16,12 +16,12 @@ export const en: Dictionary = {
     switchLanguage: "Switch language to Portuguese",
   },
   hero: {
-    eyebrow: "Systems Analysis Student · Front‑End Developer",
+    eyebrow: "Systems Analysis Student · Junior Full‑Stack Developer",
     verse: {
       text: "Commit to the Lord whatever you do, and he will establish your plans.",
       reference: "Proverbs 16:3",
     },
-    bio: "I'm a Systems Analysis and Development student, passionate about technology and continuous learning. In my free time, I love building creative landing pages that combine thoughtful design with well-crafted code.",
+    bio: "I'm Yan Gabriel, a Systems Analysis and Development student, passionate about technology and continuous learning. In my free time, I love building creative landing pages that combine thoughtful design with well-crafted code.",
     emailCta: "Send e-mail",
     projectsCta: "See projects",
   },
@@ -71,6 +71,8 @@ export const en: Dictionary = {
     subtitle:
       "Open to internship opportunities, partnerships, collaborations or just a good conversation about technology.",
     emailCta: "Send e-mail",
+    copyEmail: "Copy e-mail",
+    copied: "E-mail copied",
     location: "Brazil",
   },
   verses: {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/components/i18n/language-provider";
+import { CopyButton } from "@/components/ui/copy-button";
 import { PillButton } from "@/components/ui/pill-button";
 import { AccentRule, Section } from "@/components/ui/section";
 import { VerseQuote } from "@/components/ui/verse";
@@ -25,6 +26,10 @@ export function Contact() {
         <PillButton href={site.github} variant="outline" external>
           GitHub
         </PillButton>
+      </div>
+      <div className="mt-5 flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
+        <span className="font-mono text-[13px] text-muted-foreground">{site.email}</span>
+        <CopyButton value={site.email} label={t.contact.copyEmail} copiedLabel={t.contact.copied} />
       </div>
 
       <AccentRule className="mt-16 mb-10" />

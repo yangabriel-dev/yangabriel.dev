@@ -19,7 +19,7 @@ export function Header() {
       <div className="mx-auto flex h-[52px] max-w-[980px] items-center justify-between gap-4 px-[22px]">
         <a
           href="#top"
-          aria-label={`${site.name} — ${t.nav.home}`}
+          aria-label={`${site.brand}.dev — ${t.nav.home}`}
           className="font-mono text-[15px] font-semibold tracking-[-0.02em] whitespace-nowrap text-foreground"
         >
           {site.brand}

@@ -28,7 +28,7 @@ export function ProjectCard({
   return (
     <article
       className={cn(
-        "group relative flex flex-col rounded-card border border-border bg-card px-7 py-[26px] transition-[border-color,background-color,transform] duration-300 hover:-translate-y-0.5 hover:border-primary hover:bg-hover",
+        "group relative flex flex-col rounded-card border border-border bg-card px-7 py-[26px] transition-[border-color,background-color,transform] duration-300 hover:border-primary hover:bg-hover motion-safe:hover:-translate-y-0.5",
         className,
       )}
     >
