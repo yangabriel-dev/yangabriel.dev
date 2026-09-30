@@ -1,9 +1,8 @@
 "use client";
 
-import { ArrowDown } from "lucide-react";
 import { useLanguage } from "@/components/i18n/language-provider";
-import { PillButton } from "@/components/ui/pill-button";
 import { AccentRule, Eyebrow, Section } from "@/components/ui/section";
+import { SlideGlowLink } from "@/components/ui/slide-glow-button";
 import { SocialLinks } from "@/components/ui/social-links";
 import { site } from "@/content/site";
 
@@ -25,12 +24,14 @@ export function Hero() {
         {hero.bio}
       </p>
 
-      <div className="mt-[34px] flex flex-wrap justify-center gap-3">
-        <PillButton href={`mailto:${site.email}`}>{hero.emailCta}</PillButton>
-        <PillButton href="#projects" variant="outline">
-          <ArrowDown size={15} strokeWidth={2.2} aria-hidden className="text-primary" />
-          {hero.projectsCta}
-        </PillButton>
+      <div className="mt-[34px] flex flex-wrap justify-center gap-x-8 gap-y-4">
+        <SlideGlowLink
+          href={`mailto:${site.email}`}
+          text={hero.emailCta}
+          variant="primary"
+          className="text-xl"
+        />
+        <SlideGlowLink href="#projects" text={hero.projectsCta} className="text-xl" />
       </div>
 
       <SocialLinks className="mt-[34px]" />

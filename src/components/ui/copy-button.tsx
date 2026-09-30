@@ -1,7 +1,7 @@
 "use client";
 
-import { Check, Copy } from "lucide-react";
 import { useEffect, useState } from "react";
+import { SlideGlowButton } from "@/components/ui/slide-glow-button";
 
 export function CopyButton({
   value,
@@ -29,16 +29,17 @@ export function CopyButton({
     }
   }
 
-  const Icon = copied ? Check : Copy;
-
   return (
-    <button
-      type="button"
-      onClick={copy}
-      className="inline-flex h-[34px] cursor-pointer items-center gap-1.5 rounded-full border border-control-border bg-transparent px-3.5 font-mono text-xs font-semibold tracking-[0.04em] text-foreground uppercase transition-colors duration-200 hover:border-primary hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
-    >
-      <Icon size={14} strokeWidth={2.2} aria-hidden className={copied ? "text-primary" : undefined} />
-      <span aria-live="polite">{copied ? copiedLabel : label}</span>
-    </button>
+    <>
+      <SlideGlowButton
+        text={copied ? copiedLabel : label}
+        active={copied}
+        onClick={copy}
+        className="text-sm"
+      />
+      <span className="sr-only" aria-live="polite">
+        {copied ? copiedLabel : ""}
+      </span>
+    </>
   );
 }

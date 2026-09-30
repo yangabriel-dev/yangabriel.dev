@@ -2,8 +2,8 @@
 
 import { useLanguage } from "@/components/i18n/language-provider";
 import { CopyButton } from "@/components/ui/copy-button";
-import { PillButton } from "@/components/ui/pill-button";
 import { AccentRule, Section } from "@/components/ui/section";
+import { SlideGlowLink } from "@/components/ui/slide-glow-button";
 import { VerseQuote } from "@/components/ui/verse";
 import { site } from "@/content/site";
 
@@ -18,16 +18,17 @@ export function Contact() {
       <p className="mx-auto mt-[18px] mb-[30px] max-w-[48ch] text-[19px] leading-[1.55] text-muted-foreground">
         {t.contact.subtitle}
       </p>
-      <div className="flex flex-wrap justify-center gap-3">
-        <PillButton href={`mailto:${site.email}`}>{t.contact.emailCta}</PillButton>
-        <PillButton href={site.linkedin} variant="outline" external>
-          LinkedIn
-        </PillButton>
-        <PillButton href={site.github} variant="outline" external>
-          GitHub
-        </PillButton>
+      <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
+        <SlideGlowLink
+          href={`mailto:${site.email}`}
+          text={t.contact.emailCta}
+          variant="primary"
+          className="text-xl"
+        />
+        <SlideGlowLink href={site.linkedin} text="LinkedIn" external className="text-xl" />
+        <SlideGlowLink href={site.github} text="GitHub" external className="text-xl" />
       </div>
-      <div className="mt-5 flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
+      <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
         <span className="font-mono text-[13px] text-muted-foreground">{site.email}</span>
         <CopyButton value={site.email} label={t.contact.copyEmail} copiedLabel={t.contact.copied} />
       </div>
