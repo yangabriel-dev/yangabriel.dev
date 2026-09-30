@@ -1,0 +1,51 @@
+import type { ProjectFacts } from "@/types/content";
+
+export const site = {
+  name: "Yan Gabriel",
+  brand: "yangabriel",
+  email: "yangabriel.dev@gmail.com",
+  github: "https://github.com/yangabriel-dev",
+  linkedin: "https://www.linkedin.com/in/yangabrieldev/",
+  instagram: "https://www.instagram.com/eu_oyangabriel.dev/",
+} as const;
+
+export const socialLinks = [
+  { label: "GitHub", href: site.github },
+  { label: "LinkedIn", href: site.linkedin },
+  { label: "Instagram", href: site.instagram },
+] as const;
+
+export const stack = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Electron",
+  "Tailwind CSS",
+  "SQL",
+  "Python",
+  "Git",
+] as const;
+
+export const projects: ProjectFacts[] = [
+  {
+    id: "api-champions",
+    tags: ["Node.js", "Express", "TypeScript", "REST API"],
+    githubUrl: "https://github.com/yangabriel-dev/Api-Champions",
+  },
+  {
+    id: "devlingo",
+    tags: ["React", "TypeScript", "Vite", "Supabase"],
+    githubUrl: "https://github.com/yangabriel-dev/Devlingo",
+    liveUrl: "https://devlingo-dusky.vercel.app",
+  },
+  {
+    id: "h3d",
+    tags: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/yangabriel-dev/Site-h3d-impressao",
+    liveUrl: "https://site-h3d-impressao.vercel.app",
+  },
+];
