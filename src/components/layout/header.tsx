@@ -40,7 +40,7 @@ export function Header() {
             ))}
           </ul>
           <div className="flex items-center gap-3">
-            <ThemeToggle label={t.nav.toggleTheme} />
+            <ThemeToggle label={t.nav.darkMode} />
             <LanguageToggle />
           </div>
         </nav>

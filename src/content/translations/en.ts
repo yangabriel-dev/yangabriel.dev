@@ -12,7 +12,7 @@ export const en: Dictionary = {
     projects: "Projects",
     contact: "Contact",
     home: "Home",
-    toggleTheme: "Toggle light/dark theme",
+    darkMode: "Dark mode",
     switchLanguage: "Switch language to Portuguese",
   },
   hero: {

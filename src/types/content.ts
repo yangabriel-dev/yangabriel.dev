@@ -32,7 +32,7 @@ export interface Dictionary {
     projects: string;
     contact: string;
     home: string;
-    toggleTheme: string;
+    darkMode: string;
     switchLanguage: string;
   };
   hero: {
