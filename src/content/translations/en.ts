@@ -28,7 +28,7 @@ export const en: Dictionary = {
   about: {
     eyebrow: "About",
     paragraph: [
-      { text: "Systems Analysis and Development student and junior full-stack developer looking for an internship. Specialized in " },
+      { text: "Systems Analysis and Development student and junior full-stack developer looking for an internship. I work with " },
       { text: "React", highlight: true },
       { text: ", " },
       { text: "Next.js", highlight: true },
@@ -49,10 +49,15 @@ export const en: Dictionary = {
     sourceLabel: "Source on GitHub",
     liveLabel: "View live",
     items: {
+      neuroflow: {
+        title: "NeuroFlow",
+        description:
+          "Desktop study-routine app grounded in cognitive science, with a session timer, XP, levels, achievements and stats. Local SQLite database and typed IPC between processes.",
+      },
       "api-champions": {
         title: "Api-Champions",
         description:
-          "REST API for Champions League players and clubs, with full player CRUD and a layered architecture: controllers, services, repositories and models.",
+          "REST API for Champions League players and clubs, with full player CRUD, a layered architecture (controllers, services, repositories and models) and automated tests.",
       },
       devlingo: {
         title: "Devlingo",
