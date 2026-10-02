@@ -40,6 +40,11 @@ export const stack = [
 
 export const projects: ProjectFacts[] = [
   {
+    id: "neuroflow",
+    tags: ["Electron", "React", "TypeScript", "SQLite"],
+    githubUrl: "https://github.com/yangabriel-dev/NeuroFLow",
+  },
+  {
     id: "api-champions",
     tags: ["Node.js", "Express", "TypeScript", "REST API"],
     githubUrl: "https://github.com/yangabriel-dev/Api-Champions",

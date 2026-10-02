@@ -28,7 +28,7 @@ export const pt: Dictionary = {
   about: {
     eyebrow: "Sobre",
     paragraph: [
-      { text: "Estudante de Análise e Desenvolvimento de Sistemas e dev full-stack júnior em busca de estágio. Especializado em " },
+      { text: "Estudante de Análise e Desenvolvimento de Sistemas e dev full-stack júnior em busca de estágio. Trabalho com " },
       { text: "React", highlight: true },
       { text: ", " },
       { text: "Next.js", highlight: true },
@@ -49,10 +49,15 @@ export const pt: Dictionary = {
     sourceLabel: "Código no GitHub",
     liveLabel: "Ver online",
     items: {
+      neuroflow: {
+        title: "NeuroFlow",
+        description:
+          "App desktop de rotina de estudos baseado em ciência cognitiva, com timer de sessões, XP, níveis, conquistas e estatísticas. Banco SQLite local e comunicação tipada entre os processos via IPC.",
+      },
       "api-champions": {
         title: "Api-Champions",
         description:
-          "API REST de jogadores e clubes da Champions League, com CRUD completo de jogadores e arquitetura em camadas: controllers, services, repositories e models.",
+          "API REST de jogadores e clubes da Champions League, com CRUD completo de jogadores, arquitetura em camadas (controllers, services, repositories e models) e testes automatizados.",
       },
       devlingo: {
         title: "Devlingo",

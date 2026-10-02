@@ -10,7 +10,7 @@ export interface TextSegment {
   highlight?: boolean;
 }
 
-export type ProjectId = "api-champions" | "devlingo" | "h3d";
+export type ProjectId = "neuroflow" | "api-champions" | "devlingo" | "h3d";
 
 export interface ProjectFacts {
   id: ProjectId;
